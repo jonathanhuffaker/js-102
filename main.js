@@ -1,6 +1,7 @@
-// Write a JavaScript function that accepts an array as an argument, and returns a new array that is sorted.
+// Write a JavaScript function that accepts an array as an argument, 
+// and returns a new array that is sorted.
 
-function myNewArrAsArg() {
+function myNewArrAsArg(sortArray) {
 
 var newArray = ["apple", "pear", "mango", "blueberry"];
 console.log(newArray);
@@ -8,26 +9,27 @@ var sortArray = newArray.sort();
 return console.log(sortArray);
 }
 
-// 8. If there is a value, and its numeric value is less than 10000, 
-// call a function that passes in the user-entered value as an argument, and the name of the function that multiplies by 5. 
-//Example
-// function myOtherOtherFunction() {
-// 	var lessThanTenThou = document.getElementById("firstInput").value;
-// 	if(lessThanTenThou <10001) {
-// 	return document.write(multplyBy5(lessThanTenThou));
-// }
-// }
+// 5. Write a JavaScript function that accepts an array, 
+// and returns a new array that contains elements in the array you passed in that 
+// are larger than 25.
 
-// function EntValInField () {
-// var empt = document.getElementById("firstInput").value;
-// if (empt == "") {
-// 	alert("Please input a value");
-// 	return false;
-// }
-// //I tried to comment the two lines below out and use the other else if
-// //statement built but was unsucessful
-// else {
-// 	alert("Thanks for entering a value!");
-// 	return true;
-// }
-// }
+
+
+// 8. When the button is clicked retrieve the value of the input box. 
+// You should enter in a comma-delimited list of integers (e.g. 10,3,5,67,22,etc..).
+
+function EntValInField () {
+var empt = document.getElementById("firstInput").value;
+if (empt == "") {
+	alert("Please input a value");
+	return false;
+}
+
+// 9. Convert that string of comma-delimited numbers into an array.
+
+else {
+	var inputValue = empt.split(",");
+	alert(inputValue);
+	return true;
+}
+}
